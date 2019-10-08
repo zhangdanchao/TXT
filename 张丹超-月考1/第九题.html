@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<div id="a">
+			你好周一
+		</div>
+		<div id="b">
+			替换
+		</div>
+		<script type="text/javascript">
+			var a =document.getElementById('a'); 
+			var b =document.getElementById('b'); 
+			a.onclick = function(){
+				var c = document.createElement('h3');
+				c.innerText="你好周一";
+				document.body.replaceChild(c,b);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<style type="text/css">
+			.a{
+				width: 30px;
+				height: 30px;
+				
+			}
+			.b{
+				background-color:red ;
+				border-radius: 50px;
+			}
+			.c{
+				background-color:blue ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a b"></div>
+		<div class="a b"></div>
+		<div class="a b"></div>
+		<div class="a b"></div>
+		<div class="a b"></div>
+		<script>
+			var mydiv = document.getElementsByClassName('mydiv1');
+			mydiv.onclick = function(){
+				mydiv.style.backgroundColor = 'blue';
+				mydiv.style.width = '30px';
+				mydiv.style.height = '30px';
+			}
+		</script>
+	</body>
+</html>
