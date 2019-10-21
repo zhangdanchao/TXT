@@ -5,20 +5,20 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder="输入验证码" id="ipt">
-    <button id="btn">点击确定</button>
-    <h1 id="h1"></h1>
-    <script>
-      var b = document.getElementById('ipt');
-      var a = document.getElementById('btn');
-        var h = document.getElementById('h1');
-        a.onclick = function(){
-        var v = b.value;
-        console.log(v.toLowerCase());
-        if(v=='iabe'){
-        h.innerHTML = '输入正确'
-        }
-        }
-    </script>               
+        <input type="text" placeholder="输入验证码" id="ipt">
+        <button id="btn">点击确定</button>
+        <h1 id="h1"></h1>
+        <script>
+           var b = document.getElementById('ipt');
+           var a = document.getElementById('btn');
+           var h = document.getElementById('h1');
+           a.onclick = function(){
+            var v = b.value;
+            console.log(v.toLowerCase());
+            if(v=='iabe'){
+                h.innerHTML = '点击确定';
+            }
+           }
+        </script>
 </body>
 </html>
